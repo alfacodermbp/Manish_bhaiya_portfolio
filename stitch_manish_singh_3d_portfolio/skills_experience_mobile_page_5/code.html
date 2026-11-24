@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#0c0d0c;color:#f0f1f1;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface":"#0c0d0c","surface-container":"#141614","surface-container-high":"#1c1f1a","surface-container-highest":"#252922","surface-container-low":"#101210","surface-container-lowest":"#080808","on-surface":"#f4f5f0","on-surface-variant":"#9ea394","primary":"#c6ff00","on-primary":"#0c1400","primary-container":"#c6ff00","on-primary-container":"#0e1600","secondary":"#e5e2e1","on-secondary":"#141614","tertiary":"#00dbe9","outline":"#2c3228","outline-variant":"#3b4234"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.375rem","xl":"0.5rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","margin":"1rem","space-xl":"3rem","gutter":"1rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.5rem"},"fontFamily":{"headline-xl":["Syne","sans-serif"],"headline-lg":["Syne","sans-serif"],"headline-lg-mobile":["Syne","sans-serif"],"headline-md":["Syne","sans-serif"],"headline-sm":["Syne","sans-serif"],"body-lg":["Space Grotesk","sans-serif"],"body-md":["Space Grotesk","sans-serif"],"body-sm":["Space Grotesk","sans-serif"],"label-lg":["JetBrains Mono","monospace"],"label-md":["JetBrains Mono","monospace"],"label-sm":["JetBrains Mono","monospace"]},"fontSize":{"display-xl-mobile":["38px",{"lineHeight":"42px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg-mobile":["30px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"23px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"19px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.06em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.1em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-[#0c0d0c]/85 backdrop-blur-xl pt-safe border-b border-outline/60"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 bg-primary flex items-center justify-center text-on-primary font-headline-sm text-sm font-extrabold tracking-tighter">MKS</div><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary/90 border-l border-outline pl-space-sm">[Skills — Mobile (Page 5)]</span></div><div class="flex items-center gap-space-xs"><div class="hidden xs:flex items-center font-label-sm text-[10px] text-on-surface-variant mr-1">SYS // 2021-2024</div><button aria-label="Toggle navigation menu" class="w-10 h-10 flex items-center justify-center border border-outline bg-surface-container/60 text-on-surface hover:text-primary hover:border-primary transition-colors" onclick="document.getElementById('mobile-drawer').classList.toggle('hidden')"><span class="material-symbols-outlined text-[20px]">menu</span></button><div class="w-8 h-8 border border-primary/40 bg-surface-container flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><div class="hidden fixed inset-0 z-40 bg-[#0a0a0a]/98 backdrop-blur-2xl pt-safe flex flex-col justify-center px-space-lg" id="mobile-drawer"><button aria-label="Close navigation menu" class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center border border-outline text-on-surface-variant hover:text-primary hover:border-primary transition-colors" onclick="document.getElementById('mobile-drawer').classList.add('hidden')"><span class="material-symbols-outlined">close</span></button><div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4">[ NAVIGATION ARCHIVE ]</div><div class="flex flex-col gap-space-md"><a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface hover:text-primary transition-colors py-space-xs border-b border-outline/40 flex items-center justify-between" data-path="home" href="#" onclick="document.getElementById('mobile-drawer').classList.add('hidden')"><span>HOME</span><span class="font-label-sm text-primary text-xs">01</span></a><a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface hover:text-primary transition-colors py-space-xs border-b border-outline/40 flex items-center justify-between" data-path="about" href="#" onclick="document.getElementById('mobile-drawer').classList.add('hidden')"><span>ABOUT</span><span class="font-label-sm text-primary text-xs">02</span></a><a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface hover:text-primary transition-colors py-space-xs border-b border-outline/40 flex items-center justify-between" data-path="work" href="#" onclick="document.getElementById('mobile-drawer').classList.add('hidden')"><span>WORK</span><span class="font-label-sm text-primary text-xs">03</span></a><a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface hover:text-primary transition-colors py-space-xs border-b border-outline/40 flex items-center justify-between" data-path="skills" href="#" onclick="document.getElementById('mobile-drawer').classList.add('hidden')"><span>SKILLS</span><span class="font-label-sm text-primary text-xs">04</span></a><a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface hover:text-primary transition-colors py-space-xs border-b border-outline/40 flex items-center justify-between" data-path="contact" href="#" onclick="document.getElementById('mobile-drawer').classList.add('hidden')"><span>CONTACT</span><span class="font-label-sm text-primary text-xs">05</span></a></div><div class="mt-8 pt-4 font-label-sm text-xs text-on-surface-variant flex justify-between items-center"><span>VISUAL COMMUNICATION</span><span class="text-primary">©MKS</span></div></div><main class="flex-1 flex flex-col relative w-full px-space-md pt-16 pb-24 bg-surface"><div class="flex flex-col w-full pb-8 space-y-6">
+<!-- TOP TECHNICAL META STRIP -->
+<section class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 bg-surface-container-high px-2 py-0.5 rounded-DEFAULT">
+<span class="w-1.5 h-1.5 bg-primary-container rounded-full animate-ping"></span>
+<span class="text-on-surface font-label-sm text-label-sm tracking-widest uppercase">// 05 SKILLS &amp; TOOLKIT</span>
+</div>
+<div class="bg-surface-container px-2 py-0.5 rounded-DEFAULT text-on-surface-variant">
+<span>ARCHIVE: 05 RECORDS</span>
+</div>
+</div>
+<!-- MAIN EDITORIAL HEADLINE -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm relative overflow-hidden">
+<div class="absolute top-2 right-2 flex items-center gap-1 text-on-surface-variant font-label-sm text-[8px] opacity-70">
+<span>REF.CAD.2024</span>
+<span class="material-symbols-outlined text-[12px]">filter_center_focus</span>
+</div>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-1.5">SPECIFICATION MATRIX</p>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface uppercase tracking-tight">
+        TECHNICAL <span class="bg-primary-container text-on-primary-fixed px-1.5 py-0.5">PROFICIENCY</span> &amp; DESIGN MASTERY.
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+        Software proficiencies, creative disciplines, and operational design workflows calibrated for high-impact production.
+      </p>
+<!-- Technical Coordinate Ribbon -->
+<div class="mt-4 pt-3 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded-DEFAULT">
+<span>AXIS: X:802 Y:119</span>
+<span class="text-primary font-bold">STATUS: OPERATIONAL</span>
+<span>RES: 300DPI</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SOFTWARE TOOLKIT MATRIX -->
+<section class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Software Toolkit</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">BENCHMARK 2024</span>
+</div>
+<div class="space-y-2.5">
+<!-- Item 1: Illustrator -->
+<div class="bg-surface-container-lowest p-3.5 rounded-lg shadow-sm space-y-2">
+<div class="flex justify-between items-start">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">ADOBE ILLUSTRATOR</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-1 py-0.2 rounded-DEFAULT">[VEC-01]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vector CAD, Identity Systems &amp; Dielines</p>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-primary font-bold">95%</span>
+<span class="block font-label-sm text-[9px] text-on-surface-variant uppercase">EXPERT</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 95%;"></div>
+</div>
+</div>
+<!-- Item 2: Photoshop -->
+<div class="bg-surface-container-lowest p-3.5 rounded-lg shadow-sm space-y-2">
+<div class="flex justify-between items-start">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">ADOBE PHOTOSHOP</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-1 py-0.2 rounded-DEFAULT">[RAS-02]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Chromatic Retouching, Comps &amp; Visual Mockups</p>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-primary font-bold">90%</span>
+<span class="block font-label-sm text-[9px] text-on-surface-variant uppercase">ADVANCED</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+<!-- Item 3: Figma -->
+<div class="bg-surface-container-lowest p-3.5 rounded-lg shadow-sm space-y-2">
+<div class="flex justify-between items-start">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">FIGMA</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-1 py-0.2 rounded-DEFAULT">[SYS-03]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Design Tokens, Component Architecture &amp; Auto-Layout</p>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-primary font-bold">85%</span>
+<span class="block font-label-sm text-[9px] text-on-surface-variant uppercase">PROFICIENT</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+<!-- Item 4: InDesign -->
+<div class="bg-surface-container-lowest p-3.5 rounded-lg shadow-sm space-y-2">
+<div class="flex justify-between items-start">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">ADOBE INDESIGN</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-1 py-0.2 rounded-DEFAULT">[EDT-04]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Editorial Spreads, Modular Grids &amp; Pre-Press Books</p>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-on-surface-variant font-bold">80%</span>
+<span class="block font-label-sm text-[9px] text-on-surface-variant uppercase">WORKING</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+<!-- Item 5: CorelDRAW -->
+<div class="bg-surface-container-lowest p-3.5 rounded-lg shadow-sm space-y-2">
+<div class="flex justify-between items-start">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">CORELDRAW / PRODUCTION</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-1 py-0.2 rounded-DEFAULT">[PRN-05]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Commercial Signage, Plotting &amp; Cut Paths</p>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-on-surface-variant font-bold">75%</span>
+<span class="block font-label-sm text-[9px] text-on-surface-variant uppercase">OPERATIONAL</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded-full" style="width: 75%;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CORE CREATIVE DISCIPLINES -->
+<section class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">category</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Core Disciplines</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-DEFAULT text-on-surface-variant">4 FIELDS</span>
+</div>
+<div class="space-y-2.5">
+<!-- Discipline 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">01 // IDENTITY</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">CR-ID-88</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Identity Systems &amp; Logos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Precision geometric drafting, comprehensive brand book architectures, Bezier vector purity, and dynamic icon systems.
+        </p>
+<div class="flex flex-wrap gap-1.5 mt-3">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">CAD DRAFTING</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">STYLE GUIDES</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">VECTORS</span>
+</div>
+</div>
+<!-- Discipline 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">02 // EDITORIAL</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">CR-ED-41</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Typography &amp; Editorial Grids</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Rigid Swiss modular grid hierarchies, meticulous micro-typography, optical kerning calibration, and high-density editorial spreads.
+        </p>
+<div class="flex flex-wrap gap-1.5 mt-3">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">SWISS GRIDS</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">KERNING</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">PRE-PRESS</span>
+</div>
+</div>
+<!-- Discipline 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">03 // PACKAGING</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">CR-PK-19</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Packaging &amp; Print Production</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Structural dielines, Pantone spot-color separation, spot-UV mapping, cold-foil finishing specifications, and substrate analysis.
+        </p>
+<div class="flex flex-wrap gap-1.5 mt-3">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">PANTONE®</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">DIELINES</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">FOIL EMBOSS</span>
+</div>
+</div>
+<!-- Discipline 4 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">04 // DIGITAL</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">CR-DG-06</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Digital Graphics &amp; Social Media</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          High-voltage digital assets, avant-garde promotional collateral, brutalist marketing frameworks, and cross-platform multi-format systems.
+        </p>
+<div class="flex flex-wrap gap-1.5 mt-3">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">CAMPAIGNS</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">ASSET PIPELINE</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[9px] px-2 py-0.5 rounded-DEFAULT">MOTION-READY</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: 4-STEP DESIGN WORKFLOW -->
+<section class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">schema</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">4-Step Workflow</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CAD PIPELINE</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-[10px]">
+<span class="bg-surface-container text-on-surface font-bold px-1.5 py-0.5 rounded-DEFAULT">01</span>
+<span>DISC</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface mt-2 leading-tight">Discovery &amp; Brief Analysis</h4>
+</div>
+<p class="font-body-sm text-[12px] leading-4 text-on-surface-variant mt-2">
+          Deconstructing goals, user context, and architectural guardrails.
+        </p>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-[10px]">
+<span class="bg-primary-container text-on-primary-fixed font-bold px-1.5 py-0.5 rounded-DEFAULT">02</span>
+<span>VEC</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface mt-2 leading-tight">Vector CAD Prototyping</h4>
+</div>
+<p class="font-body-sm text-[12px] leading-4 text-on-surface-variant mt-2">
+          Rapid drafting in wireframe bounds, form exploration, and geometry.
+        </p>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-[10px]">
+<span class="bg-surface-container text-on-surface font-bold px-1.5 py-0.5 rounded-DEFAULT">03</span>
+<span>CAL</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface mt-2 leading-tight">Chromatic Calibration</h4>
+</div>
+<p class="font-body-sm text-[12px] leading-4 text-on-surface-variant mt-2">
+          High-contrast tuning, gamut verification, and stress-testing layouts.
+        </p>
+</div>
+<!-- Step 04 -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-[10px]">
+<span class="bg-surface-container text-on-surface font-bold px-1.5 py-0.5 rounded-DEFAULT">04</span>
+<span>OUT</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface mt-2 leading-tight">Pre-Flight Delivery</h4>
+</div>
+<p class="font-body-sm text-[12px] leading-4 text-on-surface-variant mt-2">
+          Master asset packages, outlined font formats, and production archives.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 5: EXPERIENCE & CREDENTIALS BADGE -->
+<section class="bg-surface-container-lowest p-4 rounded-lg shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-primary uppercase">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Credentials &amp; Pedigree</span>
+</div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">ACADEMIC // FIELD</span>
+</div>
+<div class="space-y-2">
+<!-- Record 1 -->
+<div class="flex items-start gap-3 bg-surface-container-low p-2.5 rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">workspace_premium</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold uppercase">1 Year Dedicated Practice</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Continuous commercial projects, brand identities, and editorial layouts.</p>
+</div>
+</div>
+<!-- Record 2 -->
+<div class="flex items-start gap-3 bg-surface-container-low p-2.5 rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">military_tech</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold uppercase">Six-Month Design Professional Cert</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Intensive training in industry standards, prepress, and vector graphics.</p>
+</div>
+</div>
+<!-- Record 3 -->
+<div class="flex items-start gap-3 bg-surface-container-low p-2.5 rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">school</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold uppercase">Namudag High School</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Naudiha Bazar, Jharkhand — Foundational Academics</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: FOOTER CTA PROTOCOL CARD -->
+<section class="bg-surface-container-highest p-5 rounded-lg shadow-sm space-y-4 relative overflow-hidden">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">[ READY FOR INITIATION ]</span>
+<h3 class="font-headline-lg-mobile text-[26px] leading-tight text-on-surface uppercase font-extrabold">
+        READY TO INITIATE A PROJECT?
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Available for commercial design assignments, brand identity drafting, and bespoke art direction.
+      </p>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<a class="w-full bg-primary-container text-on-primary-fixed font-label-lg text-label-lg font-bold py-3.5 px-4 text-center uppercase tracking-wider rounded-DEFAULT shadow-md flex items-center justify-center gap-2 active:scale-95 transition-transform" data-path="contact" href="#">
+<span>GET IN TOUCH</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg font-medium py-3 px-4 text-center uppercase tracking-wider rounded-DEFAULT shadow-sm active:scale-95 transition-transform" data-path="work" href="#">
+<span>VIEW PORTFOLIO</span>
+</a>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[8px] pt-2">
+<span>PROTOCOL: EST-2024</span>
+<span>SYSTEM: ACTIVE</span>
+<span>LOC: JHARKHAND (IN)</span>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic header sync and bottom nav highlight helper for Skills screen
+  (function initSkillsState() {
+    // 1. Sync the shell header text bracket if present
+    const headerSpan = document.querySelector('header span.font-label-sm');
+    if (headerSpan) {
+      headerSpan.textContent = '[SKILLS]';
+    }
+
+    // 2. Highlight the Skills bottom tab
+    const bottomNavLinks = document.querySelectorAll('nav a');
+    bottomNavLinks.forEach((link) => {
+      const path = link.getAttribute('data-path');
+      if (path === 'skills') {
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('text-primary', 'font-bold');
+      } else {
+        link.classList.remove('text-primary', 'font-bold');
+        link.classList.add('text-on-surface-variant');
+      }
+    });
+
+    // 3. Optional tap feedback for metric cards
+    const cards = document.querySelectorAll('.bg-surface-container-lowest');
+    cards.forEach(card => {
+      card.addEventListener('pointerdown', () => {
+        card.style.transform = 'scale(0.99)';
+        card.style.transition = 'transform 0.1s ease';
+      });
+      card.addEventListener('pointerup', () => {
+        card.style.transform = 'scale(1)';
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.transform = 'scale(1)';
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-[#0c0d0c]/90 backdrop-blur-xl border-t border-outline/80" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-sm"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-sm text-[9px] tracking-wider uppercase">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-sm text-[9px] tracking-wider uppercase">About</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="work" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-sm text-[9px] tracking-wider uppercase">Work</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="skills" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="font-label-sm text-[9px] tracking-wider uppercase">Skills</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[20px]">mail</span><span class="font-label-sm text-[9px] tracking-wider uppercase">Contact</span></a></div></nav></body></html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manish Kumar Singh — Portfolio</title>
+  <style>
+    :root { color-scheme: dark; background: #080908; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #080908; }
+    #portfolio-pages, .page-frame { width: 100%; height: 100%; }
+    .page-frame { display: none; border: 0; background: #080908; }
+    .page-frame.is-active { display: block; }
+    .page-frame.mobile { display: none; }
+    @media (max-width: 767px) {
+      .page-frame.desktop { display: none !important; }
+      .page-frame.mobile.is-active { display: block !important; }
+    }
+    .loading {
+      position: fixed; inset: 0; z-index: 10; display: grid; place-items: center;
+      background: #080908; color: #c6ff00; font: 600 12px/1.4 monospace;
+      letter-spacing: .14em; text-transform: uppercase;
+    }
+    .loading.is-hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loading">Loading portfolio system…</div>
+  <main id="portfolio-pages" aria-label="Portfolio pages">
+    <iframe class="page-frame desktop is-active" data-page="home" title="Home" src="./home_desktop_page_1_1/code.html"></iframe>
+    <iframe class="page-frame mobile is-active" data-page="home" title="Home (mobile)" src="./home_mobile_page_1_1/code.html"></iframe>
+
+    <iframe class="page-frame desktop" data-page="about" title="About" src="./about_me_desktop_page_2/code.html"></iframe>
+    <iframe class="page-frame mobile" data-page="about" title="About (mobile)" src="./about_me_mobile_page_2/code.html"></iframe>
+
+    <iframe class="page-frame desktop" data-page="work" title="Work" src="./portfolio_my_work_desktop_page_3/code.html"></iframe>
+    <iframe class="page-frame mobile" data-page="work" title="Work (mobile)" src="./portfolio_my_work_mobile_page_3/code.html"></iframe>
+
+    <iframe class="page-frame desktop" data-page="project-details" title="Project details" src="./project_details_desktop_page_4/code.html"></iframe>
+    <iframe class="page-frame mobile" data-page="project-details" title="Project details (mobile)" src="./project_details_mobile_page_4/code.html"></iframe>
+
+    <iframe class="page-frame desktop" data-page="skills" title="Skills" src="./skills_experience_desktop_page_5/code.html"></iframe>
+    <iframe class="page-frame mobile" data-page="skills" title="Skills (mobile)" src="./skills_experience_mobile_page_5/code.html"></iframe>
+
+    <iframe class="page-frame desktop" data-page="contact" title="Contact" src="./contact_get_in_touch_desktop_page_6/code.html"></iframe>
+    <iframe class="page-frame mobile" data-page="contact" title="Contact (mobile)" src="./contact_get_in_touch_mobile_page_6/code.html"></iframe>
+  </main>
+  <script>
+    (() => {
+      const frames = [...document.querySelectorAll('.page-frame')];
+      const loading = document.getElementById('loading');
+      const validPages = new Set(frames.map((frame) => frame.dataset.page));
+      let loadedFrames = 0;
+
+      const showPage = (requestedPage, updateHistory = true) => {
+        const page = validPages.has(requestedPage) ? requestedPage : 'home';
+        frames.forEach((frame) => frame.classList.toggle('is-active', frame.dataset.page === page));
+        if (updateHistory && location.hash !== `#${page}`) {
+          history.pushState({ page }, '', `#${page}`);
+        }
+        document.title = page === 'home'
+          ? 'Manish Kumar Singh — Portfolio'
+          : `${page.replace('-', ' ')} — Manish Kumar Singh`;
+      };
+
+      const connectFrameNavigation = (frame) => {
+        try {
+          frame.contentDocument.addEventListener('click', (event) => {
+            const link = event.target.closest('[data-path]');
+            if (!link) return;
+            event.preventDefault();
+            const target = link.dataset.path === 'lets-talk' ? 'contact' : link.dataset.path;
+            if (validPages.has(target)) showPage(target);
+          });
+        } catch (error) {
+          console.error('Unable to connect portfolio navigation', error);
+        }
+      };
+
+      frames.forEach((frame) => {
+        frame.addEventListener('load', () => {
+          loadedFrames += 1;
+          connectFrameNavigation(frame);
+          if (loadedFrames === frames.length) loading.classList.add('is-hidden');
+        });
+      });
+
+      window.addEventListener('hashchange', () => showPage(location.hash.slice(1), false));
+      window.addEventListener('popstate', (event) => showPage(event.state?.page || location.hash.slice(1), false));
+      showPage(location.hash.slice(1) || 'home', false);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&family=Syne:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#434933", "on-secondary": "#ffffff", "primary-fixed": "#bef500", "tertiary-fixed": "#7df4ff", "outline": "#747a60", "surface-container-low": "#f3f3f4", "secondary-container": "#e5e2e1", "tertiary": "#006970", "error": "#ba1a1a", "on-surface": "#1a1c1c", "on-background": "#1a1c1c", "surface-container": "#eeeeee", "on-error-container": "#93000a", "on-tertiary-fixed": "#002022", "tertiary-fixed-dim": "#00dbe9", "background": "#f9f9f9", "on-secondary-container": "#656464", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#1c1b1b", "on-primary-container": "#587300", "on-primary": "#ffffff", "inverse-surface": "#2f3131", "surface": "#f9f9f9", "secondary-fixed": "#e5e2e1", "outline-variant": "#c3caac", "surface-bright": "#f9f9f9", "surface-container-high": "#e8e8e8", "on-secondary-fixed-variant": "#474646", "on-tertiary-fixed-variant": "#004f54", "surface-tint": "#4e6700", "on-tertiary-container": "#00767e", "secondary-fixed-dim": "#c9c6c5", "surface-dim": "#dadada", "inverse-on-surface": "#f0f1f1", "on-tertiary": "#ffffff", "on-primary-fixed": "#151f00", "on-error": "#ffffff", "primary-container": "#c6ff00", "on-primary-fixed-variant": "#3a4d00", "tertiary-container": "#b0f8ff", "primary-fixed-dim": "#a6d700", "inverse-primary": "#a6d700", "surface-container-highest": "#e2e2e2", "error-container": "#ffdad6", "surface-variant": "#e2e2e2", "secondary": "#5f5e5e", "primary": "#4e6700" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-sm": "0.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "3rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "margin-desktop": "2.5rem" }, fontFamily: { "headline-lg-mobile": ["Syne"], "body-sm": ["Space Grotesk"], "label-md": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"], "headline-md": ["Syne"], "headline-xl": ["Syne"], "body-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "headline-xl-mobile": ["Syne"], "headline-lg": ["Syne"], "label-sm": ["JetBrains Mono"], "body-md": ["Space Grotesk"] }, fontSize: { "headline-lg-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" }], "headline-md": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["72px", { "lineHeight": "76px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl-mobile": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-sm": ["9px", { "lineHeight": "12px", "letterSpacing": "0.12em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center text-on-surface active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight uppercase">Project Detail</span></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-outline px-1.5 py-0.5 bg-surface-container">DOC//REF</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDIJ5bhlzgVwxDUuZHhQ92k5NldK4904UcMUQZkNqNM3qMVpzXV8iT1imNbG7ciOdCgPnkzxKktMr_fiGXLnzJx044Y54juyLbJsarJOBeyuQjOZjJ8Kh3dUmvj-0Yc3g-LotgoZbXRZi9M_MNQ5QWqUVjgOC3eGtiFQSY5MvYMKDDyWEFFGa_D8vpYUuH25SYazhQl4rPXQaFaItPGneTM3mq6T2-eXb19ovak-_aq7Tf7yOj9TVhzCQ"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-12">
+<!-- Top Navigation & Utility Breadcrumbs -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-sm bg-surface">
+<div class="flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 py-1 px-2.5 bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors rounded-none" onclick="history.back()">
+<span class="material-symbols-outlined text-[16px]">west</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Back to Portfolio</span>
+</button>
+<div class="flex items-center gap-1.5">
+<span class="inline-block w-2 h-2 bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">ID_REF: #01</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="font-label-sm text-label-sm bg-inverse-surface text-inverse-on-surface px-2 py-0.5 uppercase tracking-wider">Branding & Identity</span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant px-2 py-0.5 uppercase tracking-wider">Sample Case Study</span>
+<span class="font-label-sm text-label-sm text-outline px-1.5 py-0.5">EST. 2024</span>
+</div>
+</section>
+<!-- Project Header & Architectural Typography -->
+<section class="px-margin py-space-md bg-surface flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-label-md text-label-md text-on-primary-container font-semibold tracking-widest">[ PROJECT SPEC 01.0 ]</span>
+<span class="font-label-sm text-label-sm text-outline">LOC: BERLIN / TOKYO</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface uppercase tracking-tighter m-0">
+      KROMA STUDIO
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant uppercase tracking-wide -mt-1">
+      Visual Architecture & Brand Specimen
+    </p>
+<!-- Compact 2x2 Metadata Grid with Blueprint aesthetic -->
+<div class="grid grid-cols-2 gap-2 mt-4">
+<div class="bg-surface-container-low p-2.5 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Category</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold uppercase">Brand / Spatial Identity</span>
+</div>
+<div class="bg-surface-container-low p-2.5 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Year</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">2024 [Q2]</span>
+</div>
+<div class="bg-surface-container-low p-2.5 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Role</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold uppercase">Lead Design Technologist</span>
+</div>
+<div class="bg-surface-container-low p-2.5 flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Status</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold uppercase">Shipped // Deployed</span>
+</div>
+</div>
+</section>
+<!-- Large Cover Image Module (Hero Fig 01.0) -->
+<section class="px-margin py-space-sm bg-surface">
+<div class="relative bg-inverse-surface shadow-md overflow-hidden">
+<!-- Technical Corner Crosshairs (Top Left, Top Right, Bottom Left, Bottom Right) -->
+<span class="absolute top-2 left-2 font-label-sm text-label-sm text-primary-container select-none z-10 font-bold">+</span>
+<span class="absolute top-2 right-2 font-label-sm text-label-sm text-primary-container select-none z-10 font-bold">+</span>
+<span class="absolute bottom-2 left-2 font-label-sm text-label-sm text-primary-container select-none z-10 font-bold">+</span>
+<span class="absolute bottom-2 right-2 font-label-sm text-label-sm text-primary-container select-none z-10 font-bold">+</span>
+<!-- Figure Tag Overlay -->
+<div class="absolute top-3 left-6 z-10 bg-on-surface/90 backdrop-blur-sm px-2 py-0.5 text-primary-container font-label-sm text-label-sm uppercase tracking-wider">
+        Fig 01.0 / Collateral Specimen
+      </div>
+<img alt="Kroma Studio Stationery Showcase" class="w-full h-72 object-cover opacity-90 block" data-alt="Editorial close-up of tactile minimalist luxury stationery and embossed foil cards for Kroma Studio on dark graphite concrete background with architectural shadows and stark electric acid-chartreuse accents, high-contrast studio photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9BnsdqMCagGGdaBjnEZpDalkBXeNU6NlExNIWZ98DEiAwwoQvuiOpzMIEYenqmP2E9e9Mlz2WiWHte1L1sKVBOAG6Jng_Br0xDOyLoKsqUa6z7yuz9rEQ4uQ6mA6hloh9GMeFeslcIWX3XAiNcy8MhmYxrLgY2AFigAFCno4FXzuIwcRRPQ1Rvn_QavWP9pJG4jc3T0KczBGaxVgVDNDmbjwzVmT5CWUlLRPMNmg"/>
+<div class="p-3 bg-inverse-surface text-inverse-on-surface flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">CANVAS COORDINATES: [X: 1040 | Y: 720]</span>
+<span class="font-label-sm text-label-sm text-outline-variant uppercase">SCALE: 1:1</span>
+</div>
+</div>
+</section>
+<!-- Concept & Strategy: The Blueprint Narrative -->
+<section class="px-margin py-space-lg flex flex-col gap-space-md bg-surface">
+<div class="flex items-center gap-2">
+<span class="w-4 h-0.5 bg-primary-container"></span>
+<h2 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider m-0">01 // Architectural Narrative</h2>
+</div>
+<!-- Editorial Callout Quote with Left Accent Pill -->
+<div class="bg-surface-container-low p-4 relative shadow-sm">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<p class="font-body-lg text-body-lg text-on-surface italic pl-2 m-0">
+        “Brutal geometry fused with precision drafting mechanics: an uncompromising visual grammar engineered for the computational art movement.”
+      </p>
+<div class="mt-3 pl-2 flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span class="uppercase font-semibold text-on-surface-variant">— Design Rationale, Doc. 08</span>
+<span>//</span>
+<span>REF: KR-SYS</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<p class="font-body-md text-body-md text-on-surface-variant m-0">
+        Kroma Studio approached us to construct an uncompromising graphic identity system tailored for creative technologists and machine-learning designers. The objective: reject conventional corporate polish in favor of raw structural CAD lines, bold contrast planes, and computational rigor.
+      </p>
+<p class="font-body-md text-body-md text-on-surface-variant m-0">
+        We synthesized Swiss typographic architecture with modern high-frequency visual culture, establishing an unbending grid baseline across physical stationery, responsive screens, and industrial packaging.
+      </p>
+</div>
+<!-- Tactical Strategy Metrics Bento -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="bg-surface-container p-3 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Ratio Accuracy</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">99.8%</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">Bezier Vector Calibrated</span>
+</div>
+<div class="bg-surface-container p-3 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Color Contrast</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">16.4:1</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">WCAG AAA Compliance</span>
+</div>
+</div>
+</section>
+<!-- Design System Elements: Typography & Color Swatches -->
+<section class="px-margin py-space-md bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-4 h-0.5 bg-primary-container"></span>
+<h2 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider m-0">02 // Structural System</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-outline px-1.5 py-0.5">TOKENS // V2</span>
+</div>
+<!-- Typography Cards -->
+<div class="flex flex-col gap-2">
+<!-- Syne Specimen -->
+<div class="bg-surface-container-lowest p-3 shadow-sm">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Primary Display</span>
+<span class="font-label-sm text-label-sm text-outline">SYNE HEAVY 800</span>
+</div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface uppercase tracking-tight m-0">
+          Aa Bb Gg 74
+        </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2 tracking-widest uppercase">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
+        </p>
+</div>
+<!-- JetBrains / Space Grotesk Specimen -->
+<div class="bg-surface-container-lowest p-3 shadow-sm">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Drafting & Data Mono</span>
+<span class="font-label-sm text-label-sm text-outline">JETBRAINS MONO 500</span>
+</div>
+<p class="font-label-lg text-label-lg text-on-surface font-mono tracking-wide m-0">
+          VECTOR(X, Y) => { return [d_alpha, d_beta]; }
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+          Secondary body set in Space Grotesk 400 for rapid legible scanning in mobile viewports.
+        </p>
+</div>
+</div>
+<!-- Color Palette Matrix (2x2 Swatch Grid) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Chromatic Calibration (Core Palette)</span>
+<div class="grid grid-cols-2 gap-2">
+<!-- Acid Lime -->
+<div class="bg-primary-container p-3 text-on-primary-fixed flex flex-col justify-between h-24 shadow-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm font-bold uppercase">Acid Energy</span>
+<span class="font-label-sm text-label-sm px-1 bg-black/10">01</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold block uppercase tracking-wider">#C6FF00</span>
+<span class="font-label-sm text-label-sm opacity-80">Primary Accent</span>
+</div>
+</div>
+<!-- Deep Obsidian -->
+<div class="bg-inverse-surface p-3 text-inverse-on-surface flex flex-col justify-between h-24 shadow-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm font-bold uppercase">Obsidian</span>
+<span class="font-label-sm text-label-sm px-1 bg-white/10">02</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold block uppercase tracking-wider">#0E0E13</span>
+<span class="font-label-sm text-label-sm opacity-70">Structural Dark</span>
+</div>
+</div>
+<!-- Technical Slate -->
+<div class="bg-surface-variant p-3 text-on-surface flex flex-col justify-between h-24 shadow-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm font-bold uppercase">Graphite</span>
+<span class="font-label-sm text-label-sm px-1 bg-black/10">03</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold block uppercase tracking-wider">#1F1F25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Card Surface</span>
+</div>
+</div>
+<!-- Stark White Canvas -->
+<div class="bg-surface-container-lowest p-3 text-on-surface flex flex-col justify-between h-24 shadow-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm font-bold uppercase">Stark Plain</span>
+<span class="font-label-sm text-label-sm px-1 bg-black/10">04</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold block uppercase tracking-wider">#F9F9F9</span>
+<span class="font-label-sm text-label-sm text-outline">Base Background</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Multi-image Mockup Gallery: Technical Showcase -->
+<section class="px-margin py-space-lg flex flex-col gap-space-lg bg-surface">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-4 h-0.5 bg-primary-container"></span>
+<h2 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider m-0">03 // Artifacts & Specimen</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">3 SPECIMENS</span>
+</div>
+<!-- Gallery Item 1: Logomark Construction -->
+<div class="flex flex-col bg-surface-container-low shadow-sm overflow-hidden">
+<div class="relative bg-inverse-surface">
+<span class="absolute top-2 left-2 font-label-sm text-label-sm text-primary-container z-10 font-bold">+</span>
+<span class="absolute top-2 right-2 font-label-sm text-label-sm text-primary-container z-10 font-bold">+</span>
+<div class="absolute top-2 left-6 z-10 bg-on-surface px-1.5 py-0.5 text-primary-container font-label-sm text-label-sm uppercase">
+          Plate 02.1 / CAD Blueprint
+        </div>
+<img alt="Logomark Construction & Golden Ratio Blueprint" class="w-full h-60 object-cover block" data-alt="Technical CAD wireframe drafting diagram of geometric geometric logomark construction using golden ratio circles, vector lines, crosshairs, and millimeter measurements on dark blueprint background with acid lime accent vectors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmAAf7UFJMTkN_n6z4Sf-cddBAbQameF9IjIQp8XwSUYhqHoQiC1nq3Lo2Fn5yvjk6ZCHJXq-U3el01YpqWDh8HwhROxd6axpMYtCygmZS02V4PRYOXiQALYyxJmsq26oiJHy0AVB_LJcDw2kJxGV-DW1VxOqi1GOjNRql1nS5JWT7KWI3SPMpjEswr2g4re5_iDQ21uJ78-w1pOpfgZvizEIUO8Vpm9MGV24sCA8"/>
+</div>
+<div class="p-3 bg-surface-container-low">
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0">Logomark Construction & Vector Grid</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-2">
+          Mathematical alignment of the central emblem utilizing Fibonacci arcs combined with 45-degree bevel tangents.
+        </p>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm bg-surface text-outline px-1.5 py-0.5 uppercase">TOLERANCE: 0.05MM</span>
+<span class="font-label-sm text-label-sm bg-surface text-outline px-1.5 py-0.5 uppercase">SVG OPTIMIZED</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 2: Stationery Suite -->
+<div class="flex flex-col bg-surface-container-low shadow-sm overflow-hidden">
+<div class="relative bg-inverse-surface">
+<span class="absolute top-2 left-2 font-label-sm text-label-sm text-primary-container z-10 font-bold">+</span>
+<span class="absolute top-2 right-2 font-label-sm text-label-sm text-primary-container z-10 font-bold">+</span>
+<div class="absolute top-2 left-6 z-10 bg-on-surface px-1.5 py-0.5 text-primary-container font-label-sm text-label-sm uppercase">
+          Plate 02.2 / Print Suite
+        </div>
+<img alt="Stationery & Business Card Suite" class="w-full h-60 object-cover block" data-alt="Overhead bird's eye view of tactile business card suite, foil stamped letterhead, and embossed envelopes for Kroma Studio on dark textured granite, showcasing acid lime edge painting and stark brutalist typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEYhpfmgMWXkHugB3y63JMdOihEN62hAxdfxxcUHA4Sp9q1sr3cV64aJDKk2atTcl3V7nQNPNVfFBt5U8C5IHYHKXbw_1XJPFinRwA1heVGdQ-TzF-zt1axOmn2Yue5iIo88TYGcw-vbgBJybllE7HgsdurMy4rT4FosIFOSEsTzW9pZ98lXtgLxP2s_S-LRoFL8mVtJC-Uav2zWc887NDu0rzxSVfcuefPW8vWlU"/>
+</div>
+<div class="p-3 bg-surface-container-low">
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0">Stationery & Tactile Business Suite</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-2">
+          650gsm uncoated cotton paper with custom chartreuse foil blocking and precision edge-ink dip treatment.
+        </p>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm bg-surface text-outline px-1.5 py-0.5 uppercase">GF SMITH 650GSM</span>
+<span class="font-label-sm text-label-sm bg-surface text-outline px-1.5 py-0.5 uppercase">PANTONE 802C</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 3: Packaging & Collateral -->
+<div class="flex flex-col bg-surface-container-low shadow-sm overflow-hidden">
+<div class="relative bg-inverse-surface">
+<span class="absolute top-2 left-2 font-label-sm text-label-sm text-primary-container z-10 font-bold">+</span>
+<span class="absolute top-2 right-2 font-label-sm text-label-sm text-primary-container z-10 font-bold">+</span>
+<div class="absolute top-2 left-6 z-10 bg-on-surface px-1.5 py-0.5 text-primary-container font-label-sm text-label-sm uppercase">
+          Plate 02.3 / Industrial Pack
+        </div>
+<img alt="Packaging & Print Collateral" class="w-full h-60 object-cover block" data-alt="Matte black industrial packaging boxes and aluminum cassette cylinders labeled with neon chartreuse technical tape and monospaced silkscreen typography in modern avant-garde design studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbU5-zs-OwMxVPshPurGf3zuD8kah0-kqKkd8wDMkMlKFJSWaLD8WEf_DLiS3b51g95DnE5vykEJAvKEcrpxSFknjtyzdqSQ5b6sOQN3oWXolk3Ah5q1rvVNzczKGgVl6GNKewIy1DlXA5_GdiFmP_koi2u1wwde1AAusBFFyoapsTCaxY9wJo9mV6ivcZCZ7Ml-bY21H5xZoqrfzToP2HyHruA8JBg7Es2BZut64"/>
+</div>
+<div class="p-3 bg-surface-container-low">
+<h3 class="font-headline-sm text-headline-sm text-on-surface m-0">Packaging & Print Hardware</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-2">
+          Modular aluminum packaging with high-adhesion thermal transfer tracking labels and laser-etched serial numbers.
+        </p>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm bg-surface text-outline px-1.5 py-0.5 uppercase">MATTE ANODIZED</span>
+<span class="font-label-sm text-label-sm bg-surface text-outline px-1.5 py-0.5 uppercase">SERIES / 500</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Project Impact Sparkline -->
+<section class="px-margin py-space-md bg-surface">
+<div class="bg-inverse-surface text-inverse-on-surface p-4 shadow-md">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">Metric Distribution // Studio Impact</span>
+<span class="font-label-sm text-label-sm text-outline-variant">AGGREGATE: +340%</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-dim m-0 mb-3">
+        Client brand recall and conversion velocity monitored across 90 days post deployment.
+      </p>
+<!-- Inline SVG Sparkline -->
+<div class="w-full h-16 flex items-end">
+<svg class="w-full h-14 overflow-visible" fill="none" preserveaspectratio="none" viewbox="0 0 320 60">
+<path d="M0,50 L40,45 L80,48 L120,32 L160,38 L200,20 L240,24 L280,8 L320,4" stroke="#c6ff00" stroke-width="2.5" vector-effect="non-scaling-stroke"></path>
+<path d="M0,50 L40,45 L80,48 L120,32 L160,38 L200,20 L240,24 L280,8 L320,4 L320,60 L0,60 Z" fill="#c6ff00" fill-opacity="0.12"></path>
+<!-- Coordinate Data Dots -->
+<circle cx="120" cy="32" fill="#bef500" r="3"></circle>
+<circle cx="200" cy="20" fill="#bef500" r="3"></circle>
+<circle cx="320" cy="4" fill="#bef500" r="3.5"></circle>
+</svg>
+</div>
+<div class="flex justify-between items-center pt-2 text-surface-dim font-label-sm text-label-sm">
+<span>WK 01 / LAUNCH</span>
+<span>WK 06 / ADOPTION</span>
+<span class="text-primary-container font-semibold">WK 12 / MATURITY</span>
+</div>
+</div>
+</section>
+<!-- Bottom Sequential Project Navigation & CTA -->
+<section class="px-margin pt-space-lg pb-space-md flex flex-col gap-space-md bg-surface">
+<div class="flex items-center gap-2">
+<span class="w-4 h-0.5 bg-primary-container"></span>
+<h2 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider m-0">Project Sequencing</h2>
+</div>
+<!-- Sequential Navigation Touch Cards -->
+<div class="flex flex-col gap-2.5">
+<!-- Previous Project Card -->
+<a class="bg-surface-container-low hover:bg-surface-container p-3.5 transition-colors flex items-center justify-between group no-underline text-on-surface" href="#prev">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">← Previous Index [00]</span>
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Spatial Interface Specimen</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-on-surface transition-colors">west</span>
+</a>
+<!-- Next Project Card (Highlighted) -->
+<a class="bg-inverse-surface hover:bg-inverse-surface/90 p-3.5 transition-colors flex items-center justify-between group no-underline text-inverse-on-surface shadow-sm" href="#next">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">Next Index [02] →</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface group-hover:text-primary-container transition-colors">Brutalist Poster Series</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-primary-container">east</span>
+</a>
+</div>
+<!-- Prominent 'Back to Portfolio' Main CTA -->
+<button class="w-full mt-2 py-4 px-6 bg-on-surface text-primary-container hover:bg-primary-container hover:text-on-surface transition-all flex items-center justify-center gap-2 font-label-lg text-label-lg uppercase tracking-wider shadow-md active:scale-[0.99]" onclick="history.back()">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Return to Project Index</span>
+</button>
+</section>
+</div></main></body></html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;background-color:#0d0e0d;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+.grid-bg-blueprint {
+  background-image: linear-gradient(to right, rgba(198, 255, 0, 0.08) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(198, 255, 0, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#c6ff00","on-primary":"#0a0f00","primary-container":"#d4ff00","on-primary-container":"#000000","secondary":"#a1a1aa","surface":"#0d0e0d","surface-container":"#141614","surface-container-high":"#1c1f1c","surface-container-lowest":"#080908","surface-container-low":"#101210","surface-bright":"#262a26","on-surface":"#f4f4f5","on-surface-variant":"#a1a1aa","outline":"#3f433f","outline-variant":"#272b27","tertiary":"#00e5ff","on-tertiary":"#002022"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","margin":"2rem","space-xl":"4rem","gutter":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"2rem"},"fontFamily":{"label-sm":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"label-md":["JetBrains Mono"],"headline-xl":["Syne"],"headline-lg":["Syne"],"headline-md":["Syne"],"headline-sm":["Space Grotesk"],"body-lg":["Space Grotesk"],"body-md":["Space Grotesk"],"body-sm":["Space Grotesk"]},"fontSize":{"display-xl":["76px",{"lineHeight":"80px","letterSpacing":"-0.04em","fontWeight":"800"}],"headline-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-sm":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.08em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"600"}]}}}}</script></head><body class="bg-[#0a0a0a] font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-black"><header class="fixed top-0 w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-[#222620]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-3"><a class="font-headline-xl text-2xl tracking-tighter text-white font-extrabold uppercase flex items-center gap-1 group" data-path="home" href="#"><span class="w-2.5 h-2.5 bg-primary inline-block"></span>MKS<span class="text-primary group-hover:translate-x-0.5 transition-transform">_</span></a><span class="hidden sm:inline-block font-label-sm text-[10px] tracking-widest uppercase px-2 py-0.5 border border-primary/40 text-primary bg-primary/10 rounded-sm">2021-2024</span></div><nav class="hidden md:flex items-center gap-6" data-active-classes="bg-primary text-black font-semibold rounded px-3 py-1"><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors py-1 px-2" data-path="home" href="#">Home</a><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors py-1 px-2" data-path="about" href="#">About</a><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors py-1 px-2" data-path="work" href="#">Work</a><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors py-1 px-2" data-path="skills" href="#">Skills</a><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors py-1 px-2" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="px-4 py-2 rounded bg-primary text-black hover:bg-white hover:text-black font-label-lg text-xs uppercase tracking-widest font-bold transition-all shadow-[0_0_15px_rgba(198,255,0,0.25)] flex items-center gap-1.5" data-path="contact" href="#"><span>Let's Talk</span><span class="material-symbols-outlined text-[15px]">arrow_outward</span></a><div class="w-8 h-8 rounded border border-primary/40 bg-black flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-[#0a0a0a]"><div class="flex flex-col w-full">
+<!-- Telemetry Bar / Running Coordinate Strip -->
+<section class="w-full bg-surface-container-high text-on-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-xs font-label-sm text-label-sm uppercase tracking-wider">
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 font-bold text-on-background">
+<span class="w-2 h-2 bg-primary-container inline-block"></span>
+          SYS.NODE // 05.SKILLS
+        </span>
+<span class="text-secondary">[LAT: 24°10'N LON: 84°12'E]</span>
+<span class="text-outline">REG: JH-IN // STN: PLM-01</span>
+</div>
+<div class="flex items-center gap-space-lg text-secondary">
+<span>RUNTIME: OPTIMAL // CALIBRATION 99.4%</span>
+<span class="text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">terminal</span>
+          SPEC_AUDIT_2024.V3
+        </span>
+</div>
+</div>
+</section>
+<!-- Editorial Page Header Section -->
+<section class="w-full bg-surface text-on-surface py-space-xl relative overflow-hidden">
+<!-- Ambient Blueprint Watermark -->
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-5 pointer-events-none flex items-center justify-end select-none">
+<svg class="w-full h-full text-on-surface" fill="none" viewbox="0 0 400 400">
+<circle cx="200" cy="200" r="180" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1"></circle>
+<circle cx="200" cy="200" r="120" stroke="currentColor" stroke-width="1"></circle>
+<line stroke="currentColor" stroke-width="1" x1="20" x2="380" y1="200" y2="200"></line>
+<line stroke="currentColor" stroke-width="1" x1="200" x2="200" y1="20" y2="380"></line>
+<rect height="120" stroke="currentColor" stroke-width="1" width="120" x="140" y="140"></rect>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-12 gap-gutter-desktop items-end">
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs self-start bg-primary-container text-on-surface font-label-md text-label-md px-3 py-1 font-bold">
+<span class="material-symbols-outlined text-[16px]">architecture</span>
+<span>// 05 / TECHNICAL COMPETENCIES &amp; TOOLKIT</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface uppercase tracking-tighter">
+            TECHNICAL PROFICIENCY <br/>
+<span class="bg-primary-container text-on-surface px-2 inline-block -rotate-1">
+              &amp; DESIGN MASTERY.
+            </span>
+</h1>
+</div>
+<div class="col-span-12 lg:col-span-4 flex flex-col justify-between h-full pt-space-lg lg:pt-0">
+<div class="bg-surface-container-high p-space-md shadow-sm">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-secondary uppercase pb-space-xs">
+<span>INDEX: CAPABILITIES MATRIX</span>
+<span>VER: 4.8.2</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              A systematic audit of software proficiencies, foundational visual disciplines, and professional creative execution protocols across print, identity, and digital environments.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Software Matrix Section (Data meters & tool capability) -->
+<section class="w-full bg-surface-container-lowest text-on-surface py-space-xl">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest block mb-space-xs">[MODULE 01] // APPLICATION REPERTOIRE</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">Software Toolkit Matrix</h2>
+</div>
+<div class="font-label-sm text-label-sm text-secondary uppercase flex items-center gap-space-md bg-surface-container px-3 py-2">
+<span class="inline-block w-2.5 h-2.5 bg-primary-container"></span>
+<span>CALIBRATED FOR PRODUCTION EFFICIENCY</span>
+</div>
+</div>
+<!-- Grid of Software Meters -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- 01. Illustrator -->
+<div class="bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 bg-on-background text-primary-container font-headline-md text-headline-md flex items-center justify-center font-bold">
+              Ai
+            </div>
+<div class="text-right font-label-sm text-label-sm">
+<span class="bg-primary-container text-on-surface px-2 py-0.5 font-bold">95% // EXPERT</span>
+<p class="text-secondary mt-1">EXP: 3+ YRS</p>
+</div>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Adobe Illustrator</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Vector Drafting, Precision Logomark Construction, Complex Iconography, Packaging Dieline Engineering &amp; Geometric Glyphs.
+            </p>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary mb-1">
+<span>VECTOR ACCURACY</span>
+<span class="font-bold text-on-surface">0.05pt TOLERANCE</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container" style="width: 95%"></div>
+</div>
+</div>
+</div>
+<!-- 02. Photoshop -->
+<div class="bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 bg-on-background text-tertiary-fixed font-headline-md text-headline-md flex items-center justify-center font-bold">
+              Ps
+            </div>
+<div class="text-right font-label-sm text-label-sm">
+<span class="bg-surface-container-highest text-on-surface px-2 py-0.5 font-bold">90% // ADVANCED</span>
+<p class="text-secondary mt-1">EXP: 2.5+ YRS</p>
+</div>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Adobe Photoshop</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Photorealistic Compositing, High-End Retouching, Spatial Mockup Rendering, Layer Masks, Depth Simulation &amp; Color Grading.
+            </p>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary mb-1">
+<span>RASTER PRECISION</span>
+<span class="font-bold text-on-surface">300 DPI BITMAP</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-high overflow-hidden">
+<div class="h-full bg-on-background" style="width: 90%"></div>
+</div>
+</div>
+</div>
+<!-- 03. Figma -->
+<div class="bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 bg-on-background text-primary-container font-headline-md text-headline-md flex items-center justify-center font-bold">
+              Fg
+            </div>
+<div class="text-right font-label-sm text-label-sm">
+<span class="bg-primary-container text-on-surface px-2 py-0.5 font-bold">85% // PROFICIENT</span>
+<p class="text-secondary mt-1">EXP: 2 YRS</p>
+</div>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Figma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              UI Architecture, Component Tokens, Auto-layout Modular Systems, Interactive Wireframes, Vector Prototyping &amp; Handoff Specs.
+            </p>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary mb-1">
+<span>TOKEN SYSTEMATICS</span>
+<span class="font-bold text-on-surface">AUTO-LAYOUT READY</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container" style="width: 85%"></div>
+</div>
+</div>
+</div>
+<!-- 04. InDesign -->
+<div class="bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 bg-on-background text-tertiary-fixed font-headline-md text-headline-md flex items-center justify-center font-bold">
+              Id
+            </div>
+<div class="text-right font-label-sm text-label-sm">
+<span class="bg-surface-container-highest text-on-surface px-2 py-0.5 font-bold">80% // PRACTITIONER</span>
+<p class="text-secondary mt-1">EXP: 1.5+ YRS</p>
+</div>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Adobe InDesign</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Master Pages, Complex Multi-Column Grids, Paragraph Stylesheets, Kerning Calibration, Pre-Press Print Flight Checks.
+            </p>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary mb-1">
+<span>GRID ADHERENCE</span>
+<span class="font-bold text-on-surface">12-COL BASELINE</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary" style="width: 80%"></div>
+</div>
+</div>
+</div>
+<!-- 05. CorelDRAW / Vector CAD -->
+<div class="bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 bg-on-background text-primary-container font-headline-md text-headline-md flex items-center justify-center font-bold">
+              Cd
+            </div>
+<div class="text-right font-label-sm text-label-sm">
+<span class="bg-surface-container-highest text-on-surface px-2 py-0.5 font-bold">75% // OPERATIONAL</span>
+<p class="text-secondary mt-1">EXP: 1.5 YRS</p>
+</div>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">CorelDRAW / Vector CAD</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Commercial Plotter Plotting, Signage Die-Cutting Paths, Flex/Banner Layouts, Large-Scale Serigraphy &amp; Production Prep.
+            </p>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary mb-1">
+<span>CUTTER PATH COMPATIBILITY</span>
+<span class="font-bold text-on-surface">DIRECT PLOT 1:1</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary" style="width: 75%"></div>
+</div>
+</div>
+</div>
+<!-- 06. Supplementary Production Stack -->
+<div class="bg-surface-container-high p-space-lg flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">AUXILIARY PRODUCTION</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Print &amp; Digital Utilities</h3>
+<ul class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm space-y-2">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span>
+<span>Acrobat Pro DC (PDF/X-1a preflight verification)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span>
+<span>PANTONE® Color Bridge guides &amp; spot ink mixing</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span>
+<span>FontLab / Glyphs (Basic custom ligature tweaks)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span>
+<span>Raster-to-Vector Bezier tracing optimization</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md">
+<span class="font-label-sm text-label-sm bg-on-background text-primary-container px-2.5 py-1 inline-block font-bold">
+              COLOR MANAGEMENT: ISO COATED V2
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Break / Technical Drafting Schematic Spread -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-12 gap-gutter-desktop items-center">
+<!-- SVG Vector Anatomy Blueprint -->
+<div class="col-span-12 lg:col-span-6 bg-on-background text-inverse-on-surface p-space-lg relative overflow-hidden shadow-xl">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-primary-container uppercase pb-space-sm">
+<span>FIGURE 05.A // BEZIER MATHEMATICS</span>
+<span>ANCHOR POINT GRID</span>
+</div>
+<!-- Inline Technical SVG Graphic -->
+<div class="w-full py-4 flex items-center justify-center">
+<svg class="w-full h-56 text-primary-container" fill="none" viewbox="0 0 500 240">
+<!-- Grid background lines -->
+<line stroke="#2f3131" stroke-width="1" x1="20" x2="480" y1="30" y2="30"></line>
+<line stroke="#2f3131" stroke-width="1" x1="20" x2="480" y1="80" y2="80"></line>
+<line stroke="#2f3131" stroke-width="1" x1="20" x2="480" y1="130" y2="130"></line>
+<line stroke="#2f3131" stroke-width="1" x1="20" x2="480" y1="180" y2="180"></line>
+<line stroke="#2f3131" stroke-width="1" x1="20" x2="480" y1="230" y2="230"></line>
+<line stroke="#2f3131" stroke-width="1" x1="60" x2="60" y1="10" y2="230"></line>
+<line stroke="#2f3131" stroke-width="1" x1="160" x2="160" y1="10" y2="230"></line>
+<line stroke="#2f3131" stroke-width="1" x1="260" x2="260" y1="10" y2="230"></line>
+<line stroke="#2f3131" stroke-width="1" x1="360" x2="360" y1="10" y2="230"></line>
+<line stroke="#2f3131" stroke-width="1" x1="460" x2="460" y1="10" y2="230"></line>
+<!-- Geometric Curves -->
+<path d="M 60 180 C 120 40, 200 40, 260 130 C 320 220, 380 40, 460 80" fill="none" stroke="#c6ff00" stroke-width="3"></path>
+<path d="M 60 180 L 120 40" stroke="#7df4ff" stroke-dasharray="2 2" stroke-width="1"></path>
+<path d="M 260 130 L 200 40" stroke="#7df4ff" stroke-dasharray="2 2" stroke-width="1"></path>
+<path d="M 260 130 L 320 220" stroke="#7df4ff" stroke-dasharray="2 2" stroke-width="1"></path>
+<path d="M 460 80 L 380 40" stroke="#7df4ff" stroke-dasharray="2 2" stroke-width="1"></path>
+<!-- Handles and Control Points -->
+<circle cx="120" cy="40" fill="#7df4ff" r="4"></circle>
+<circle cx="200" cy="40" fill="#7df4ff" r="4"></circle>
+<circle cx="320" cy="220" fill="#7df4ff" r="4"></circle>
+<circle cx="380" cy="40" fill="#7df4ff" r="4"></circle>
+<!-- Anchors -->
+<rect fill="#c6ff00" height="8" width="8" x="56" y="176"></rect>
+<rect fill="#c6ff00" height="8" width="8" x="256" y="126"></rect>
+<rect fill="#c6ff00" height="8" width="8" x="456" y="76"></rect>
+<!-- Dimension Annotations -->
+<text fill="#a1a1aa" font-family="JetBrains Mono" font-size="10" x="70" y="170">P0(60,180)</text>
+<text fill="#a1a1aa" font-family="JetBrains Mono" font-size="10" x="270" y="120">P1(260,130)</text>
+<text fill="#a1a1aa" font-family="JetBrains Mono" font-size="10" x="400" y="95">P2(460,80)</text>
+</svg>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-secondary pt-space-xs">
+<span>TANGENT CONTINUITY: G2 (SMOOTH)</span>
+<span class="text-primary-container">CURVATURE OPTIMIZED</span>
+</div>
+</div>
+<!-- Detailed Explanatory Panel -->
+<div class="col-span-12 lg:col-span-6 flex flex-col justify-center gap-space-md">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">// PRECISION VECTOR CRAFT</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">
+            Sub-Pixel Drafting &amp; Mathematical Purity
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Every vector mark is constructed on mathematically governed coordinate grids. Anchor points are kept strictly to their required minima to ensure razor-sharp digital scaling from 16px favicons to 60-foot billboards without bezier distortion or micro-creasing.
+          </p>
+<div class="grid grid-cols-2 gap-gutter bg-surface-container-high p-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase block">BEZIER REDUCTION</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">-35%</p>
+<p class="font-body-sm text-body-sm text-secondary">Fewer anchor points per mark</p>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase block">PRINT FIDELITY</span>
+<p class="font-headline-sm text-headline-sm text-primary font-bold mt-1">2400 DPI</p>
+<p class="font-body-sm text-body-sm text-secondary">Platesetter rip accuracy</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Design Disciplines & Competencies (Interactive Editorial Grid) -->
+<section class="w-full bg-surface text-on-surface py-space-xl">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest block mb-space-xs">[MODULE 02] // FOUNDATIONAL DISCIPLINES</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">Core Design Competencies</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Rigorous execution spanning identity construction, Swiss-inspired typographic systems, tactile print engineering, and campaign storytelling.
+        </p>
+</div>
+<!-- 4 High-Impact Bento Cards with Rich Visual Imagery -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop">
+<!-- Card 01: Brand Identity -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-md text-label-md font-bold text-on-background">[01 / IDENTITY]</span>
+<span class="material-symbols-outlined text-primary text-[28px]">token</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mt-space-xs">
+              Brand Identity Systems
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              Architectural logo design, mathematical golden ratio construction, comprehensive brand identity guidelines, visual DNA synthesis, and chromatic harmonization.
+            </p>
+</div>
+<!-- Visual Showcase Image -->
+<div class="my-space-md overflow-hidden bg-surface-container">
+<img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical architectural brand identity manual and logo construction grid on high-contrast blueprint paper with vibrant acid lime highlights, sharp geometry, and drafting calipers in a clean studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvlUDJasxC3EcImYZtzUEHzOQHyML6mEP-nS4r7LmH3epVoFrmCwYtMb_RB4YmFMiBtucUGk7HMSEjbPClYApdawnJBgWKQv61x-btCDhDWsU7hOzvF9yZIn1POQGi8Geu8cATYKBmw-QQERonZovu1CIEuIbNRxdybIyQwYE05vdvuPsUxoDNaNfB1C4gbYS_74yYYzWEiZI7a_x3LlHmckmShZWVJkjfjWWlu0I"/>
+</div>
+<div class="bg-surface-container-low p-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">CORE DELIVERABLES</span>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="bg-surface-container-high px-2 py-0.5">Primary Marks</span>
+<span class="bg-surface-container-high px-2 py-0.5">Monograms</span>
+<span class="bg-surface-container-high px-2 py-0.5">Brand Books</span>
+<span class="bg-surface-container-high px-2 py-0.5">Usage Governance</span>
+</div>
+</div>
+</div>
+<!-- Card 02: Editorial & Typography -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-md text-label-md font-bold text-on-background">[02 / TYPOGRAPHY]</span>
+<span class="material-symbols-outlined text-primary text-[28px]">format_shapes</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mt-space-xs">
+              Editorial &amp; Typography
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              Swiss 12-column structural grids, modular typographic scales, high-tension monospaced alignments, optical kerning calibration, and micro-typographic hierarchy.
+            </p>
+</div>
+<!-- Visual Showcase Image -->
+<div class="my-space-md overflow-hidden bg-surface-container">
+<img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-fashion modern editorial book spread showing oversized brutalist Swiss typography, geometric grid columns, monospaced metadata footnotes, and high contrast black and neon chartreuse accents on heavy uncoated paper stock." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqVUh8p2OFQtub7wharsyf6NFI8ibvam-IJdggy7QfVFqRfKrlE93kMufEFRPGhLdx0FSiaery2B0Pg384ICutdxZA-iignaXXweuykzHFcLnA_R9MZcSDEdDLPheTQ6zCZBKa5L5cXZM-k1fc8ST_Y8EYdpIA75v4sqXwBQ8ykYXaeVA_760_4JP1Jfw3CKZLapQWeklk27VPa-wlbrvWwsgfsF9kVMxUwPV3CxY"/>
+</div>
+<div class="bg-surface-container-low p-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">CORE DELIVERABLES</span>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="bg-surface-container-high px-2 py-0.5">Editorial Spreads</span>
+<span class="bg-surface-container-high px-2 py-0.5">Type Pairings</span>
+<span class="bg-surface-container-high px-2 py-0.5">Catalogues</span>
+<span class="bg-surface-container-high px-2 py-0.5">Hierarchy Systems</span>
+</div>
+</div>
+</div>
+<!-- Card 03: Print Production & Packaging -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-md text-label-md font-bold text-on-background">[03 / PRODUCTION]</span>
+<span class="material-symbols-outlined text-primary text-[28px]">inventory_2</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mt-space-xs">
+              Print Production &amp; Packaging
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              CMYK + Pantone® Spot ink specification, 300 DPI pre-flight, dieline geometry, foil stamping, spot UV masks, and substrate weight selection (80gsm–400gsm).
+            </p>
+</div>
+<!-- Visual Showcase Image -->
+<div class="my-space-md overflow-hidden bg-surface-container">
+<img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury geometric packaging box unfold with sharp dieline cutouts, metallic foil stamping, embossed technical markings, and Pantone color swatches arranged on a gray drafting cutting mat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB5IiokgjEo-5QMqjrFa9s6Y_pY5zINPkd_o44RCphGRYWFP7ltI6Ul-bo5h6jIBHSZwgx_FC17hQ4vCYfJ5jF0kz41ijSnamXYPK5E7joJaGMuGhZEckDZ31Qf3rRdNmNtxuHCsyBLLdONmxQvkjng-p2Ko6toHHIB4VTgqv-il82eVYoJyNjsdyvA4BDmmrshVXn3kHiY_yBTt7__tvFzvDf1Rn3sBK5GClmmIs"/>
+</div>
+<div class="bg-surface-container-low p-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">CORE DELIVERABLES</span>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="bg-surface-container-high px-2 py-0.5">Packaging Boxes</span>
+<span class="bg-surface-container-high px-2 py-0.5">Die-lines</span>
+<span class="bg-surface-container-high px-2 py-0.5">Offset Separation</span>
+<span class="bg-surface-container-high px-2 py-0.5">Print Pre-flight</span>
+</div>
+</div>
+</div>
+<!-- Card 04: Digital & Social Media Creative -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-md text-label-md font-bold text-on-background">[04 / DIGITAL]</span>
+<span class="material-symbols-outlined text-primary text-[28px]">view_quilt</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mt-space-xs">
+              Digital &amp; Social Creative
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              High-voltage promotional assets engineered for algorithmic feeds across 1:1, 4:5, and 9:16 aspect ratios. High visual velocity with razor-sharp editorial contrast.
+            </p>
+</div>
+<!-- Visual Showcase Image -->
+<div class="my-space-md overflow-hidden bg-surface-container">
+<img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A curated series of three smartphone mockups displaying brutalist digital campaign posters with acid yellow graphics, high contrast typography, and expressive dynamic layouts against a deep slate background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmXd6Bs4rUxVJE-qahfGIpybSf60WL_0vSZqQ0oufzDVCJGWtXkA8oS23lBQkl5w_1n1Pfkwg9q15_w-7DYp5ePCDSfWOcbhmOdKMb_OtcZaGDpdlnnj2u6LHOkPGbkEuEkG6zDAs5IdeGuV89w5bgJUHfCOrsTr71ONJJD-E5_axZWEJwKlAn5CYGhr99MuoeN_3x5P7WIzEMPiGaTTvWo2_-mk3Hle44HncJSxc"/>
+</div>
+<div class="bg-surface-container-low p-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">CORE DELIVERABLES</span>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="bg-surface-container-high px-2 py-0.5">1:1 Carousels</span>
+<span class="bg-surface-container-high px-2 py-0.5">9:16 Stories</span>
+<span class="bg-surface-container-high px-2 py-0.5">Web Banners</span>
+<span class="bg-surface-container-high px-2 py-0.5">Motion Assets</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Professional Workflow & Process Timeline (4-Stage Linear Drafting Protocol) -->
+<section class="w-full bg-surface-container text-on-surface py-space-xl">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest block mb-space-xs">[MODULE 03] // SYSTEMATIC EXECUTION</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">Drafting Protocol &amp; Workflow</h2>
+</div>
+<div class="font-label-sm text-label-sm text-secondary uppercase bg-surface-container-highest px-3 py-2">
+<span>FOUR-PHASE LINEAR PIPELINE // 100% REPEATABILITY</span>
+</div>
+</div>
+<!-- Linear Step Sequence -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop relative">
+<!-- Stage 01 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm pb-space-xs">
+<span>STAGE // 01</span>
+<span class="material-symbols-outlined text-[18px]">search</span>
+</div>
+<div class="w-8 h-1 bg-primary-container my-space-xs"></div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">
+              Discovery &amp; Research
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Deconstruct project objectives, conduct competitive typographic audits, compile moodboard vectors, and establish technical constraints.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low p-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase block">MILESTONE:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">CREATIVE BRIEF &amp; MOOD MATRIX</span>
+</div>
+</div>
+<!-- Stage 02 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm pb-space-xs">
+<span>STAGE // 02</span>
+<span class="material-symbols-outlined text-[18px]">draw</span>
+</div>
+<div class="w-8 h-1 bg-primary-container my-space-xs"></div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">
+              Vector Prototyping
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Draft initial raster sketches into CAD paths, explore geometric variations, align to Swiss grid systems, and stress-test visual weight.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low p-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase block">MILESTONE:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">3 CONVERGENT CONCEPTS</span>
+</div>
+</div>
+<!-- Stage 03 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm pb-space-xs">
+<span>STAGE // 03</span>
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div class="w-8 h-1 bg-primary-container my-space-xs"></div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">
+              Refinement &amp; Testing
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Optical balance calibration, WCAG AAA accessibility contrast validation, substrate ink absorption checks, and responsive typography scaling.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low p-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase block">MILESTONE:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">FINAL CHROMATIC LOCKUP</span>
+</div>
+</div>
+<!-- Stage 04 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm pb-space-xs">
+<span>STAGE // 04</span>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="w-8 h-1 bg-primary-container my-space-xs"></div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">
+              Pre-Flight &amp; Delivery
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Generate native CMYK print masters (PDF/X-1a), pristine SVG web assets, color token guides, and exhaustive asset packages.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low p-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase block">MILESTONE:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">PRODUCTION ARCHIVE PACK (.ZIP)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Practical Grounding Recap Section -->
+<section class="w-full bg-surface-container-high py-space-xl">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="bg-surface-container-lowest p-space-lg lg:p-space-xl shadow-md">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">// ACADEMIC GROUNDING &amp; FIELD PRACTICE</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">
+              Foundational Credentials
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Grounded in both systematic classroom theory and active hands-on commercial output across Jharkhand print hubs and digital clients.
+            </p>
+</div>
+<div class="bg-on-background text-inverse-on-surface p-space-md min-w-[280px]">
+<span class="font-label-sm text-label-sm text-primary-container uppercase block mb-1">TOTAL COMMITTED EXP</span>
+<span class="font-headline-xl text-headline-xl text-primary-container block font-bold leading-none">01+</span>
+<span class="font-body-sm text-body-sm text-secondary block mt-1">Year of Dedicated Graphic Design Practice</span>
+</div>
+</div>
+<!-- 3-Column Credential Highlights -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop mt-space-xl pt-space-lg">
+<!-- Item 1 -->
+<div class="bg-surface-container-low p-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary pb-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">workspace_premium</span>
+<span>CERTIFICATION</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">
+              Professional Graphic Design Diploma
+            </h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+              Six-Month Intensive Training Program covering Advanced Adobe Suite, Typography, Color Systems &amp; Print Setup.
+            </p>
+<span class="inline-block mt-space-sm font-label-sm text-label-sm text-primary font-semibold">COMPLETED WITH HONORS</span>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-low p-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary pb-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">school</span>
+<span>ACADEMICS</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">
+              Class 12 Secondary Education
+            </h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+              Rigorous analytical foundation completed in Palamu, Jharkhand. Disciplined critical thinking and mathematical comprehension.
+            </p>
+<span class="inline-block mt-space-sm font-label-sm text-label-sm text-secondary">PALAMU // JHARKHAND</span>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-low p-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary pb-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">local_shipping</span>
+<span>FIELD APPRENTICESHIP</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">
+              Commercial Print House Exposure
+            </h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+              Direct workshop floor experience operating large-format plotters, CMYK separation plates, and paper stock finishing.
+            </p>
+<span class="inline-block mt-space-sm font-label-sm text-label-sm text-primary font-semibold">TACTILE PRODUCTION READY</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner / Next Steps Section -->
+<section class="w-full bg-on-background text-inverse-on-surface py-space-xl relative overflow-hidden">
+<!-- Ambient diagonal stripes overlay -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #c6ff00 0, #c6ff00 2px, transparent 0, transparent 40px);"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="bg-surface-container-lowest text-on-surface p-space-lg lg:p-space-xl shadow-2xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="max-w-2xl flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-2 font-label-sm text-label-sm text-secondary uppercase">
+<span class="w-2 h-2 bg-primary-container"></span>
+<span>DISPATCH TRANSMISSION // PROJECT INITIALIZATION</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">
+            Have a project requiring <br/>
+<span class="bg-primary-container px-2 inline-block">rigorous design craft?</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Available for brand identity systems, complete editorial layouts, commercial print packaging, and high-voltage digital collateral.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full lg:w-auto">
+<a class="px-6 py-4 bg-primary-container text-on-surface font-label-lg text-label-lg font-bold uppercase tracking-wider text-center hover:bg-on-background hover:text-primary-container transition-colors shadow-md flex items-center justify-center gap-2" href="#">
+<span>Initiate Collaboration // Contact</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="px-6 py-4 bg-surface-container text-on-surface font-label-lg text-label-lg font-bold uppercase tracking-wider text-center hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2" href="#">
+<span>Explore Case Studies</span>
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-black border-t border-[#222620] py-space-lg"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span><p class="font-label-sm text-xs uppercase tracking-wider text-neutral-400">© Manish Kumar Singh — Graphic Designer</p></div><div class="flex items-center gap-space-lg"><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors" data-path="home" href="#">Home</a><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors" data-path="about" href="#">About</a><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors" data-path="work" href="#">Work</a><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors" data-path="skills" href="#">Skills</a><a class="font-label-lg text-xs uppercase tracking-wider text-neutral-400 hover:text-primary transition-colors" data-path="contact" href="#">Contact</a></div></div></footer></body></html>
