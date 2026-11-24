@@ -87,8 +87,8 @@
 <span class="font-label-sm text-primary font-bold">256-BIT DISPATCH</span>
 </div>
 <div class="flex items-center justify-between gap-space-sm mt-1">
-<span class="font-label-lg font-bold text-on-surface select-all break-all" id="designer-email">manish.vectorlab@gmail.com</span>
-<button class="px-3 py-1 bg-on-background text-primary-container hover:bg-primary-container hover:text-on-background font-label-sm font-bold uppercase transition-all shadow-[2px_2px_0px_#4e6700]" onclick="navigator.clipboard.writeText('manish.vectorlab@gmail.com'); this.innerHTML='COPIED'; setTimeout(() =&gt; this.innerHTML='COPY', 2000);" type="button">
+<span class="font-label-lg font-bold text-on-surface select-all break-all" id="designer-email">manishkumarsingh0400@gmail.com</span>
+<button class="px-3 py-1 bg-on-background text-primary-container hover:bg-primary-container hover:text-on-background font-label-sm font-bold uppercase transition-all shadow-[2px_2px_0px_#4e6700]" onclick="navigator.clipboard.writeText('manishkumarsingh0400@gmail.com'); this.innerHTML='COPIED'; setTimeout(() =&gt; this.innerHTML='COPY', 2000);" type="button">
                   COPY
                 </button>
 </div>
@@ -102,9 +102,9 @@
 <div class="flex items-center justify-between gap-space-sm mt-1">
 <div class="flex items-center gap-space-xs">
 <span class="material-symbols-outlined text-primary text-[20px]">call</span>
-<span class="font-label-lg font-bold text-on-surface">+91 98765 43210</span>
+<span class="font-label-lg font-bold text-on-surface">+91 9617857875</span>
 </div>
-<a class="px-3 py-1 bg-surface-container-highest hover:bg-primary-container text-on-surface font-label-sm font-bold uppercase transition-all" href="https://wa.me/919876543210" rel="noopener noreferrer" target="_blank">
+<a class="px-3 py-1 bg-surface-container-highest hover:bg-primary-container text-on-surface font-label-sm font-bold uppercase transition-all" href="https://wa.me/919617857875" rel="noopener noreferrer" target="_blank">
                   SIGNAL / WA
                 </a>
 </div>
@@ -197,114 +197,43 @@
               </div>
 </div>
 <!-- Interactive Inquiry Form -->
-<form class="flex flex-col gap-space-lg" onsubmit="event.preventDefault(); document.getElementById('dispatch-state').classList.remove('hidden');">
+<form class="flex flex-col gap-space-lg" id="desktop-contact-form" onsubmit="event.preventDefault(); dispatchDesktopInquiry();">
 <!-- 01 Name / Entity -->
 <div class="flex flex-col gap-space-xs">
 <label class="font-label-sm uppercase tracking-widest text-primary-container flex items-center justify-between" for="sender-name">
-<span>01 // YOUR NAME / ENTITY IDENTIFIER</span>
-<span class="text-secondary-fixed-dim">[REQUIRED]</span>
+<span>Name</span>
 </label>
 <div class="relative">
-<input class="w-full bg-surface-container-lowest/5 text-surface-container-lowest placeholder:text-surface-container-highest/40 font-body-md px-space-md py-space-sm border-0 border-b-2 border-surface-variant/30 focus:border-primary-container focus:ring-0 transition-colors" id="sender-name" placeholder="e.g. Elena Rostova / Studio Axiom" required="" type="text"/>
-<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-surface-container-high/40">ID_TAG</span>
+<input class="w-full bg-surface-container-lowest/5 text-surface-container-lowest placeholder:text-surface-container-highest/40 font-body-md px-space-md py-space-sm border-0 border-b-2 border-surface-variant/30 focus:border-primary-container focus:ring-0 transition-colors" id="sender-name" placeholder="Enter your name" required="" type="text"/>
 </div>
 </div>
 <!-- 02 Email Address -->
 <div class="flex flex-col gap-space-xs">
 <label class="font-label-sm uppercase tracking-widest text-primary-container flex items-center justify-between" for="sender-email">
-<span>02 // ELECTRONIC COMM ADDRESS</span>
-<span class="text-secondary-fixed-dim">[REQUIRED // SMTP VALIDATED]</span>
+<span>Email</span>
 </label>
 <div class="relative">
-<input class="w-full bg-surface-container-lowest/5 text-surface-container-lowest placeholder:text-surface-container-highest/40 font-body-md px-space-md py-space-sm border-0 border-b-2 border-surface-variant/30 focus:border-primary-container focus:ring-0 transition-colors" id="sender-email" placeholder="e.g. elena@axiom.design" required="" type="email"/>
-<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-surface-container-high/40">@DNS</span>
+<input class="w-full bg-surface-container-lowest/5 text-surface-container-lowest placeholder:text-surface-container-highest/40 font-body-md px-space-md py-space-sm border-0 border-b-2 border-surface-variant/30 focus:border-primary-container focus:ring-0 transition-colors" id="sender-email" placeholder="Enter your email" required="" type="email"/>
 </div>
 </div>
 <!-- 03 Project Scope / Discipline Chips -->
 <div class="flex flex-col gap-space-xs">
-<span class="font-label-sm uppercase tracking-widest text-primary-container flex items-center justify-between">
-<span>03 // PROJECT SCOPE / DISCIPLINE SELECTION</span>
-<span class="text-secondary-fixed-dim">[MULTI-SELECT ACTIVE]</span>
-</span>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs pt-space-xs" id="discipline-chips">
-<label class="cursor-pointer">
-<input checked="" class="peer sr-only" name="discipline" type="checkbox" value="brand-identity"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-primary-container peer-checked:text-on-background peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#0a0a0a]">
-                      [ Brand Identity ]
-                    </span>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="discipline" type="checkbox" value="editorial-print"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-primary-container peer-checked:text-on-background peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#0a0a0a]">
-                      [ Editorial &amp; Print ]
-                    </span>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="discipline" type="checkbox" value="packaging"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-primary-container peer-checked:text-on-background peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#0a0a0a]">
-                      [ Packaging Dielines ]
-                    </span>
-</label>
-<label class="cursor-pointer">
-<input checked="" class="peer sr-only" name="discipline" type="checkbox" value="vector-cad"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-primary-container peer-checked:text-on-background peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#0a0a0a]">
-                      [ Vector Logomark ]
-                    </span>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="discipline" type="checkbox" value="digital"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-primary-container peer-checked:text-on-background peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#0a0a0a]">
-                      [ Digital / Social ]
-                    </span>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="discipline" type="checkbox" value="other"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-primary-container peer-checked:text-on-background peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#0a0a0a]">
-                      [ Custom Bespoke ]
-                    </span>
-</label>
-</div>
+<label class="font-label-sm uppercase tracking-widest text-primary-container" for="project-type">Project Type</label>
+<input class="w-full bg-surface-container-lowest/5 text-surface-container-lowest placeholder:text-surface-container-highest/40 font-body-md px-space-md py-space-sm border-0 border-b-2 border-surface-variant/30 focus:border-primary-container focus:ring-0 transition-colors" id="project-type" name="project-type" placeholder="What kind of project do you need?" type="text"/>
 </div>
 <!-- 04 Estimated Budget Range -->
 <div class="flex flex-col gap-space-xs">
 <span class="font-label-sm uppercase tracking-widest text-primary-container flex items-center justify-between">
-<span>04 // ESTIMATED BUDGET THRESHOLD</span>
-<span class="text-secondary-fixed-dim">[INR CAPITAL ALLOCATION]</span>
+<span>Budget</span>
 </span>
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs">
-<label class="cursor-pointer">
-<input class="peer sr-only" name="budget" type="radio" value="tier-1"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-tertiary-fixed peer-checked:text-on-tertiary-fixed peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#002022]">
-                      &lt; ₹25,000
-                    </span>
-</label>
-<label class="cursor-pointer">
-<input checked="" class="peer sr-only" name="budget" type="radio" value="tier-2"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-tertiary-fixed peer-checked:text-on-tertiary-fixed peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#002022]">
-                      ₹25k - ₹50k
-                    </span>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="budget" type="radio" value="tier-3"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-tertiary-fixed peer-checked:text-on-tertiary-fixed peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#002022]">
-                      ₹50k - ₹1,00k
-                    </span>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="budget" type="radio" value="tier-4"/>
-<span class="block px-space-sm py-2 text-center font-label-sm uppercase bg-surface-container-lowest/10 text-surface-container-high peer-checked:bg-tertiary-fixed peer-checked:text-on-tertiary-fixed peer-checked:font-bold transition-all border border-transparent peer-checked:shadow-[2px_2px_0px_#002022]">
-                      ₹1,00k+ BESPOKE
-                    </span>
-</label>
-</div>
+<input class="w-full bg-surface-container-lowest/5 text-surface-container-lowest placeholder:text-surface-container-highest/40 font-body-md px-space-md py-space-sm border-0 border-b-2 border-surface-variant/30 focus:border-primary-container focus:ring-0 transition-colors" id="project-budget" name="budget" placeholder="Enter your budget in ₹" type="text"/>
 </div>
 <!-- 05 Project Brief & Timeline -->
 <div class="flex flex-col gap-space-xs">
 <label class="font-label-sm uppercase tracking-widest text-primary-container flex items-center justify-between" for="project-brief">
-<span>05 // DIRECTIVE BRIEF &amp; TIMELINE SPEC</span>
-<span class="text-secondary-fixed-dim">[VECTOR PARAMETERS]</span>
+<span>Project Details</span>
 </label>
-<textarea class="w-full bg-surface-container-lowest/5 text-surface-container-lowest placeholder:text-surface-container-highest/40 font-body-md px-space-md py-space-sm border-0 border-b-2 border-surface-variant/30 focus:border-primary-container focus:ring-0 transition-colors resize-none" id="project-brief" placeholder="Deconstruct your project vision, target timeline, deliverables, aesthetic guardrails, and key benchmarks..." required="" rows="4"></textarea>
+<textarea class="w-full bg-surface-container-lowest/5 text-surface-container-lowest placeholder:text-surface-container-highest/40 font-body-md px-space-md py-space-sm border-0 border-b-2 border-surface-variant/30 focus:border-primary-container focus:ring-0 transition-colors resize-none" id="project-brief" placeholder="Describe your project, deliverables and timeline..." required="" rows="4"></textarea>
 </div>
 <!-- File Attachment Simulation -->
 <div class="p-space-md bg-surface-container-lowest/5 border border-dashed border-surface-variant/40 hover:border-primary-container transition-colors cursor-pointer text-center group">
@@ -317,7 +246,7 @@
 <!-- Transmission Action CTA -->
 <div class="flex flex-col gap-space-xs pt-space-sm">
 <button class="w-full py-space-md px-space-lg bg-primary-container text-on-background hover:bg-surface-container-lowest font-headline-sm uppercase tracking-wider font-extrabold transition-all shadow-[4px_4px_0px_#a6d700] hover:shadow-[6px_6px_0px_#7df4ff] flex items-center justify-center gap-space-sm group" type="submit">
-<span>TRANSMIT INQUIRY // DISPATCH BRIEF</span>
+<span>Send Inquiry</span>
 <span class="material-symbols-outlined text-[24px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </button>
 <div class="flex items-center justify-between font-label-sm text-surface-container-high/60 pt-1 uppercase">
@@ -426,4 +355,18 @@
 </div>
 </div>
 </section>
-</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest py-space-lg"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="w-2.5 h-2.5 bg-primary-container border border-on-surface"></span><p class="font-label-sm uppercase tracking-wider text-secondary">© Manish Kumar Singh — Graphic Designer</p></div><div class="flex items-center gap-space-lg"><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="work" href="#">Work</a><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></div></div></footer></body></html>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest py-space-lg"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="w-2.5 h-2.5 bg-primary-container border border-on-surface"></span><p class="font-label-sm uppercase tracking-wider text-secondary">© Manish Kumar Singh — Graphic Designer</p></div><div class="flex items-center gap-space-lg"><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="work" href="#">Work</a><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="font-label-lg uppercase tracking-wider text-secondary hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></div></div></footer>
+<script>
+function dispatchDesktopInquiry() {
+  const name = document.getElementById('sender-name').value.trim();
+  const email = document.getElementById('sender-email').value.trim();
+  const projectType = document.getElementById('project-type').value.trim();
+  const budget = document.getElementById('project-budget').value.trim();
+  const brief = document.getElementById('project-brief').value.trim();
+  const subject = encodeURIComponent(`Project inquiry from ${name}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nProject type: ${projectType}\nBudget: ${budget.startsWith('₹') ? budget : `₹${budget}`}\n\nProject details:\n${brief}`);
+  document.getElementById('dispatch-state').classList.remove('hidden');
+  window.location.href = `mailto:manishkumarsingh0400@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
+</body></html>
