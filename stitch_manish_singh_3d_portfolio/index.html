@@ -87,7 +87,19 @@
 
       window.addEventListener('hashchange', () => showPage(location.hash.slice(1), false));
       window.addEventListener('popstate', (event) => showPage(event.state?.page || location.hash.slice(1), false));
-      showPage(location.hash.slice(1) || 'home', false);
+      const pathPage = {
+        '/home': 'home',
+        '/about': 'about',
+        '/work': 'work',
+        '/project-details': 'project-details',
+        '/skills': 'skills',
+        '/contact': 'contact'
+      }[location.pathname.replace(/\/+$/, '')];
+      const initialPage = location.hash.slice(1) || pathPage || 'home';
+      showPage(initialPage, false);
+      if (pathPage && !location.hash) {
+        history.replaceState({ page: initialPage }, '', `#${initialPage}`);
+      }
     })();
   </script>
 </body>
